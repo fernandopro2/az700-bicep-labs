@@ -1,0 +1,54 @@
+{
+    "location": {
+      "value": "eastus"
+    },
+    "vnetNames": {
+      "value": ["vnet1", "vnet2", "vnet3"]
+    },
+    "vnetAddressSpaces": {
+      "value": [
+        ["10.0.0.0/16"],
+        ["10.1.0.0/16"],
+        ["10.2.0.0/16"]
+      ]
+    },
+    "subnetConfigs": {
+      "value": [
+        {
+          "name": "subnet1",
+          "addressPrefix": "10.0.1.0/24"
+        },
+        {
+          "name": "subnet2",
+          "addressPrefix": "10.1.1.0/24"
+        },
+        {
+          "name": "subnet3",
+          "addressPrefix": "10.2.1.0/24"
+        }
+      ]
+    },
+    "nsgRules": {
+      "value": [
+        {
+          "name": "nsg1",
+          "securityRules": [
+            {
+              "name": "AllowSSH",
+              "properties": {
+                "protocol": "Tcp",
+                "destinationPortRange": "22",
+                "access": "Allow",
+                "direction": "Inbound",
+                "priority": 100,
+                "sourceAddressPrefix": "*",
+                "destinationAddressPrefix": "*",
+                "sourcePortRange": "*"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+  
