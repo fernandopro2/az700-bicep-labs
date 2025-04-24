@@ -1,7 +1,3 @@
-Here’s the translated version in English:
-
----
-
 # **AZ-700: Designing and Implementing Microsoft Azure Networking Solutions**
 
 Welcome to the repository for exercises and Bicep templates for the **AZ-700** certification study! Here, you'll find the templates and scripts required to follow the official Microsoft course labs, along with notes and improvements based on practical experience.
