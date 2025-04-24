@@ -23,18 +23,6 @@ module vnets './vnet.bicep' = [for i in range(0, length(vnetNames)): {
   }
 }]
 
-/*
-module subnetsModule './subnet.bicep' = {
-  name: 'subnetDeployment'
-  params: {
-    subnets: [for i in range(0, length(vnetNames)): {
-      vnetId: vnets[i].outputs.vnetId
-      subnets: subnetConfigs[i]
-    }]
-  }
-}
-
-*/
 
 module nsg './nsg.bicep' = {
   name: 'nsgDeployment'
