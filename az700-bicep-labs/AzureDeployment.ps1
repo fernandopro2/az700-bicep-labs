@@ -1,3 +1,5 @@
+
+ # Resource Group Creation and Deployment Script
 $ResourceGroupParams = @{
     Name = 'az-700-lab-m01-u4-rg'
     Location = 'eastus'
