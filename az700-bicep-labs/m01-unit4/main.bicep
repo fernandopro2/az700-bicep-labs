@@ -1,5 +1,5 @@
 @description('Location for the resources')
-param location string = 'eastus'
+param location string
 
 @description('Virtual Network names')
 param vnetNames array
